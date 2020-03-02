@@ -289,6 +289,8 @@ MODBUS_API void modbus_set_float_cdab(float f, uint16_t *dest);
 #ifndef ARDUINO
 #include "modbus-tcp.h"
 #include "modbus-rtu.h"
+#else
+#define DELAY_3_5CHAR 3500
 #endif
 
 MODBUS_END_DECLS
